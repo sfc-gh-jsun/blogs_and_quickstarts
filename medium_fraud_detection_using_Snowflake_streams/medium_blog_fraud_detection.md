@@ -1,4 +1,4 @@
-# Snowflake Openflow and Streams to AWS: Production-Ready Fraud Alerting
+# Snowflake Openflow and Streams to AWS: Production-Ready Real-Time Fraud Alerting
 
 *Discover how to build an enterprise-grade fraud detection pipeline that combines Snowflake's Change Data Capture (CDC) streams, AWS Kinesis, and intelligent email filtering to deliver instant, actionable fraud alerts while eliminating noise and false positives.*
 
