@@ -301,8 +301,9 @@ Through this implementation, you've created:
 Continue your fraud detection journey with these resources:
 
 - **Snowflake Streams Documentation**: [Real-time CDC streams](https://docs.snowflake.com/en/user-guide/streams-intro)
-- **AWS Kinesis Best Practices**: [Scaling and performance optimization](https://docs.aws.amazon.com/kinesis/latest/dev/kinesis-dg.pdf)
 - **Snowflake Openflow**: [Data pipeline orchestration](https://www.snowflake.com/en/data-cloud/openflow/)
+- [Building Streaming Pipelines With Snowflake Openflow](https://www.youtube.com/watch?v=T7dk4EF9--I)
+- **Amazon Kinesis Data Streams Best Practices**: [Scaling and performance optimization](https://docs.aws.amazon.com/kinesis/latest/dev/kinesis-dg.pdf)
 - This content is also available on [Github repository](https://github.com/sfc-gh-jsun/blogs_and_quickstarts/blob/main/medium_fraud_detection_using_Snowflake_streams/medium_blog_fraud_detection.md)
 
 *You now have the foundation for enterprise-grade, intelligent fraud prevention that scales with your business needs and delivers the precise, timely alerts your customers expect.*
