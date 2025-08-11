@@ -25,7 +25,7 @@ This comprehensive guide demonstrates how to build the **production-ready fraud 
 
 The system implements a sophisticated data pipeline that combines real-time streaming with intelligent business logic. The reference architecture below illustrates this demo pipeline.
 
-![demo reference architecture](https://raw.githubusercontent.com/sfc-gh-jsun/blogs_and_quickstarts/main/medium_fraud_detection_using_Snowflake_streams/assets/RA.png)
+![demo reference architecture](assets/RA.png)
 
 ### Key Components & Intelligence Layer:
 
@@ -110,12 +110,12 @@ On the Openflow canvas, create a process group and import the downloaded definit
 - **AWS Secret Access Key**: AWS secret key for Kinesis access
 - **AWS Kinesis Stream Name**: Kinesis stream name, `fraud-detection-stream` is the default
 
-![Openflow connector parameters](https://raw.githubusercontent.com/sfc-gh-jsun/blogs_and_quickstarts/main/medium_fraud_detection_using_Snowflake_streams/assets/param.png)
+![Openflow connector parameters](assets/param.png)
 
 Now you can start the connector to stream data from Snowflake to Kinesis.
 
-![start Openflow](https://raw.githubusercontent.com/sfc-gh-jsun/blogs_and_quickstarts/main/medium_fraud_detection_using_Snowflake_streams/assets/start-openflow.png)
-![run Openflow](https://raw.githubusercontent.com/sfc-gh-jsun/blogs_and_quickstarts/main/medium_fraud_detection_using_Snowflake_streams/assets/run-openflow.png)
+![start Openflow](assets/start-openflow.png)
+![run Openflow](assets/run-openflow.png)
 
 ### Step 4: Configure SNS Email Subscriptions
 
@@ -252,7 +252,7 @@ WHERE alert_id = 'FA001';
 -- Verify the assignment
 SELECT * FROM fraud_alerts WHERE alert_id = 'FA001';
 
--- 5. Analyst raises the risk level to HIGH, email sent
+-- 5. Analyst raises the risk level to HIGH, email sent, , check your inbox to verify
 UPDATE fraud_alerts 
 SET risk_level = 'HIGH'
 WHERE alert_id = 'FA001';
@@ -266,7 +266,7 @@ WHERE alert_id = 'FA001';
 ```
 </div>
 
-**Expected System Processing:**
+**Expected system processing when analyst raised the risk level from LOW to HIGH in step 5 in the above SQL command block :**
 1. ✅ **Metadata Action**: INSERT (processed)
 2. ✅ **Alert Status**: OPEN (not resolved)
 3. ✅ **Customer**: CUST001 exists, email enabled, ACTIVE account
@@ -286,7 +286,6 @@ WHERE alert_id = 'FA001';
 
 This comprehensive demo has equipped you with the knowledge and hands-on experience to confidently build a production-ready fraud detection system that combines the power of **Snowflake Openflow**, **Snowflake CDC streams**, **AWS Kinesis**, and **intelligent filtering logic** to deliver actionable fraud alerts while preventing alert fatigue.
 
-### 🎯 **What You've Accomplished**
 
 Through this implementation, you've created:
 
@@ -304,5 +303,6 @@ Continue your fraud detection journey with these resources:
 - **Snowflake Streams Documentation**: [Real-time CDC streams](https://docs.snowflake.com/en/user-guide/streams-intro)
 - **AWS Kinesis Best Practices**: [Scaling and performance optimization](https://docs.aws.amazon.com/kinesis/latest/dev/kinesis-dg.pdf)
 - **Snowflake Openflow**: [Data pipeline orchestration](https://www.snowflake.com/en/data-cloud/openflow/)
+- This content is also available on [Github repository](https://github.com/sfc-gh-jsun/blogs_and_quickstarts/blob/main/medium_fraud_detection_using_Snowflake_streams/medium_blog_fraud_detection.md)
 
 *You now have the foundation for enterprise-grade, intelligent fraud prevention that scales with your business needs and delivers the precise, timely alerts your customers expect.*
