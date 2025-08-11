@@ -25,7 +25,7 @@ This comprehensive guide demonstrates how to build the **production-ready fraud 
 
 The system implements a sophisticated data pipeline that combines real-time streaming with intelligent business logic. The reference architecture below illustrates this demo pipeline.
 
-![demo reference architecture](assets/RA.png)
+![demo reference architecture](https://raw.githubusercontent.com/sfc-gh-jsun/blogs_and_quickstarts/main/medium_fraud_detection_using_Snowflake_streams/assets/RA.png)
 
 ### Key Components & Intelligence Layer:
 
@@ -110,12 +110,12 @@ On the Openflow canvas, create a process group and import the downloaded definit
 - **AWS Secret Access Key**: AWS secret key for Kinesis access
 - **AWS Kinesis Stream Name**: Kinesis stream name, `fraud-detection-stream` is the default
 
-![Openflow connector parameters](assets/param.png)
+![Openflow connector parameters](https://raw.githubusercontent.com/sfc-gh-jsun/blogs_and_quickstarts/main/medium_fraud_detection_using_Snowflake_streams/assets/param.png)
 
 Now you can start the connector to stream data from Snowflake to Kinesis.
 
-![start Openflow](assets/start-openflow.png)
-![run Openflow](assets/run-openflow.png)
+![start Openflow](https://raw.githubusercontent.com/sfc-gh-jsun/blogs_and_quickstarts/main/medium_fraud_detection_using_Snowflake_streams/assets/start-openflow.png)
+![run Openflow](https://raw.githubusercontent.com/sfc-gh-jsun/blogs_and_quickstarts/main/medium_fraud_detection_using_Snowflake_streams/assets/run-openflow.png)
 
 ### Step 4: Configure SNS Email Subscriptions
 
