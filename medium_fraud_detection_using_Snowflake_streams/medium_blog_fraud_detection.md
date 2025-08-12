@@ -291,7 +291,7 @@ Through this implementation, you've created:
 
 - **Real-Time Data Pipeline**: Snowflake streams capture transaction changes with zero-copy CDC technology
 - **Scalable Message Processing**: AWS Kinesis handles high-throughput data streaming with guaranteed delivery
-- **Intelligent Alert Filtering**: Multi-condition logic ensures only high-priority alerts reach customers. Note that for demonstration purposes, we used an EC2 instance to host the Python program; however, it is highly recommended to containerize the code for scalability using [Amazon ECS](https://medium.com/r/?url=https%3A%2F%2Fdocs.aws.amazon.com%2Fecs%2F) or [EKS](https://medium.com/r/?url=https%3A%2F%2Faws.amazon.com%2Feks%2F)
+- **Intelligent Alert Filtering**: Multi-condition logic ensures only high-priority alerts reach customers. Note that for demonstration purposes, we used an EC2 instance to host the Python program; however, it is highly recommended to host the containerized code for scalability using [Amazon ECS](https://medium.com/r/?url=https%3A%2F%2Fdocs.aws.amazon.com%2Fecs%2F) or [EKS](https://medium.com/r/?url=https%3A%2F%2Faws.amazon.com%2Feks%2F)
 - **Automated Infrastructure**: One-click CloudFormation deployment with production-ready configurations
 - **Enterprise-Grade Notifications**: AWS SNS delivers reliable, scalable email alerts with subscription management
 
