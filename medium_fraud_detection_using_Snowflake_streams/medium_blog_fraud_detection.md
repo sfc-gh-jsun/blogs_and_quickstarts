@@ -8,7 +8,7 @@
 
 Imagine **SnoCreditGuard**, a leading consumer reporting agency that monitors over 200 million credit profiles, partnering with **AlertFlow Communications**, a specialized communication service provider. When SnoCreditGuard's AI and machine learning models detect suspicious activity—like a sudden spike in credit inquiries from unfamiliar locations—they need to instantly notify affected consumers without overwhelming them with false alarms.
 
-The challenge: SnoCreditGuard processes 50+ million transactions daily in Snowflake, but only 0.02% warrant immediate consumer notification. Meanwhile, AlertFlow must deliver these critical alerts through multiple channels (email, SMS, push notifications) while maintaining 99.9% deliverability and sub-second latency.
+The challenge: SnoCreditGuard processes 50+ million transactions daily in Snowflake, but only 0.02% warrant immediate consumer notification. Meanwhile, AlertFlow must deliver these critical alerts through multiple channels (email, SMS, push notifications) while maintaining 99.9% deliverability and very low latency.
 
 This comprehensive guide demonstrates how to build the **production-ready fraud detection pipeline** that powers this partnership—a system that combines Snowflake's Change Data Capture (CDC) streams with AWS communication services to deliver **intelligent, personalized fraud alerts** that consumers actually need.
 
